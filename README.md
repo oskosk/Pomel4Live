@@ -6,6 +6,9 @@ Everything related to the **Pomel4Live** custom MIDI Controller
 
 **Pomel4Live** is a custom MIDI controller developed by my wife, Malena. While she was guided and assisted in the construction by [Yaeltex](https://github.com/Yaeltex) during the [MIDI controller workshop](https://yaeltex.com/tcmidi1-inscripcion/), the controls were thought by Malena to suit her needs as a frequent user of the [Reason DAW](https://www.propellerheads.se/en/reason) for [producing and designing Sound for Theater Plays](http://www.alternativateatral.com/persona5802-malena-graciosi).
 
+During the workshop, The attendees who were Ableton Live users where guided by the crew in order to generate the specific [Control Surface Scripts](https://help.ableton.com/hc/en-us/articles/206240184-Creating-your-own-Control-Surface-script) for the Ableton Live DAW. But there was not so much focus in the Reason software, so the Remote Scripts for **Pomel4Live** and Propellerheads Reason were never created.
+
+A few days ago, we decided to revamp the controller and give it a try to make it work seamlessly with Reason without the need to remap the remote controls each time Malena needed to work on a new project and after this, I'm creating the repository to publish them.
 
 ### Controller  overview
 
@@ -34,9 +37,12 @@ The controller consists of a few faders, buttons and knobs mainly. Specifically:
 
 ### Usage with Reason
 
-During the workshop, The attendees who were Ableton Live users where guided by the crew in order to generate the specific [Control Surface Scripts](https://help.ableton.com/hc/en-us/articles/206240184-Creating-your-own-Control-Surface-script) for the Ableton Live DAW. But there was not so much focus in the Reason software, so the Remote Scripts for **Pomel4Live** and Propellerheads Reason were never created.
+**Pomel4Live** works in a default mapping if the proper setup is followed. For this, you need to:
 
-A few days ago, we decided to revamp the controller and give it a try to make it work seamlessly with Reason without the need to remap the remote controls each time Malena needed to work on a new project and after this, I'm creating the repository to publish them.
+1. Copy the MIDI codec files for **Pomel4Live**
+1. Install the MIDI map files for **Pomel4Live**
+1. Autodetect the Control Surface from Reason's Preferences.
+1. Lock the surface to the **Reason Main Section**.
 
 #### Pomel4Live's Default Remote Mapping in Reason
 
