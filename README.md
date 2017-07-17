@@ -4,7 +4,7 @@ Everything related to the Pomel4Live custom MIDI Controller
 
 ### What is Pomel4Live
 
-**Pomel4Live** is a custom MIDI controller built by my wife, Malena during a MIDI workshop organized and led by @Yaeltex in 2015.
+**Pomel4Live** is a custom MIDI controller built by my wife, Malena, as part of the proposed tasks of the MIDI workshop organized and led by [Yaeltex](https://github.com/Yaeltex) in 2015.
 
 Pomel4Live's design is very opinionated and resembles a simple 4 channel mixer. Its main purpose was for it to work with Propellerheads Reason as an assistant to the functions Malena used the most from the [Reason Main Section]().
 
