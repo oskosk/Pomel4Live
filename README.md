@@ -4,14 +4,19 @@ Everything related to the Pomel4Live custom MIDI Controller
 
 ### What is Pomel4Live
 
-**Pomel4Live** is a custom MIDI controller built by my wife, Malena, as part of the proposed tasks of the MIDI workshop organized and led by [Yaeltex](https://github.com/Yaeltex) in 2015.
+**Pomel4Live** is a custom MIDI controller developed by my wife, Malena. While she was guided and assisted in the construction by [Yaeltex](https://github.com/Yaeltex) as part of the proposed tasks of the [MIDI controller workshop](https://yaeltex.com/tcmidi1-inscripcion/), the controls design and layout was designed by her to suit her needs as a frequent user of DAWs for producing and designing for Theater Plays.
 
-Pomel4Live's design is very opinionated and resembles a simple 4 channel mixer. Its main purpose was for it to work with Propellerheads Reason as an assistant to the functions Malena used the most from the [Reason Main Section]().
+
+
+### Controller  overview
+
+Pomel4Live's design is very opinionated and resembles a simple 4 channel mixer. Its main purpose is to controller a specific and reduced set of the [Propellerheads Reason Main Section] controls. Specifically, channellevels, FX returns, and FX Sends.
 
 | <img src="https://user-images.githubusercontent.com/746152/28279616-6a8c1c92-6af7-11e7-954d-d65c3003bdbf.jpg" width=300 /> | <img src="https://user-images.githubusercontent.com/746152/28279909-5fc2b766-6af8-11e7-9ab7-bbc90250f088.jpg" width=300 /> |
 |:---:|:---:|
 | **Pomel4Live MIDI Controller**| **Pomel4Live MIDI Controller - Front** |
-### Gear overview
+
+### Controls in the Pomel4Live controller
 
 The controller consists of a few faders, buttons and knobs mainly. Specifically:
 
@@ -23,7 +28,14 @@ The controller consists of a few faders, buttons and knobs mainly. Specifically:
 * Distance Sensor toggle. Enables or disables the distance sensor.
 
 
-#### Proposed setup for Reason
+#### Specific purpose
+
+The basic idea was that the two Main knobs (**Knob a** and **Knob b**) were going to handle the Return Level of just two Effect (FXs). The 4 faders would handle the levels of the first 4 channels. The two buttons before each fader would mute or solo the channel. And the knobs labeled a1, b1, a[x], b[x] would handle the Send level of the channel to Effect a and Effect b.
+
+The *Distance Sensor* in the controller was more a Proof of Concept of the variety of interactions that can be mapped to a MIDI interface, than anything else. So it never had a definitive purpose associated. The button to the left of the **Distance Sensor** is meant to toggle the Sensor on or off.
+
+
+#### Specific purpos in Reason
 
 | Control | Reason function | Reason device |
 |:---:|:---:|:---:|
@@ -49,39 +61,18 @@ The controller consists of a few faders, buttons and knobs mainly. Specifically:
 | Fader 2 | controls Level for Channel 2 | Main Section |
 | Fader 3 | controls Level for Channel 3 | Main Section |
 | Fader 4 | controls Level for Channel 4 | Main Section |
-| Distance Sensor | Probably best used as a modulator | Main Section |
-| Distance Sensor Toggle |  Enables or disables the distance sensor | Main Section |
+| Distance Sensor | Nothing currently. Probably best used as a modulator | |
+| Distance Sensor Toggle | Enables or disables the distance sensor | No Reason device |
 
-* Knob a1 - controls FX 1 Send Level for Channel 1
-* Knob b1 - controls FX 2 Send Level for Channel 1
-* Knob a2 - controls FX 1 Send Level for Channel 2
-* Knob b2 - controls FX 2 Send Level for Channel 2
-* Knob a3 - controls FX 1 Send Level for Channel 3
-* Knob b3 - controls FX 2 Send Level for Channel 3
-* Knob a4 - controls FX 1 Send Level for Channel 4
-* Knob b4 - controls FX 2 Send Level for Channel 4
-* Button 1 - Mutes Channel 1
-* Button 2 - Soloes Channel 1
-* Button 3 - Mutes Channel 2
-* Button 4 - Soloes Channel 2
-* Button 5 - Mutes Channel 3
-* Button 6 - Soloes Channel 3
-* Button 7 - Mutes Channel 4
-* Button 8 - Soloes Channel 4
-* Fader 1 - controls Level for Channel 1
-* Fader 2 - controls Level for Channel 2
-* Fader 3 - controls Level for Channel 3
-* Fader 4 - controls Level for Channel 4
-* Distance Sensor. Probably best used as a modulator.
-* Distance Sensor toggle. Enables or disables the distance sensor.
+## Usage with Reason
 
-### Reason Support Files
-
-During the workshop, there was a tendency to orient the development to Ableton Live users.
+During the workshop, to Ableton Live users where guided by .
 So while creating the controller, there was some guidance to those users in order to create
 The Ableton Live Automation scripts for the controller but not so much for Reason users..
 
 A few days ago, we decided to revamp the controller and give it a try to make it work seamlessly with Reason without the need to remap the remote controls each time Malena needed to work on a new project.
+
+### Reason Support Files
 
 * Codec File
   * Pomel4Live.midicodec
