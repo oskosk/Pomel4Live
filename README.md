@@ -1,6 +1,6 @@
 # Pomel4Live
 
-Everything related to the Pomel4Live custom MIDI Controller
+Everything related to the **Pomel4Live** custom MIDI Controller
 
 ### What is Pomel4Live
 
@@ -19,7 +19,7 @@ The design of the **Pomel4Live** MIDI controller is very opinionated and resembl
 
 The basic idea was that the two Main knobs (**Knob a** and **Knob b**) were going to handle the Return Level of the first two Effect (FXs). The 4 faders would handle the levels of the first 4 channels. The two buttons before each fader would mute or solo the channel. And the knobs labeled a1, b1, a[x], b[x] would handle the Send level of the channel to Effect a and Effect b.
 
-The *Distance Sensor* in the controller was more a Proof of Concept of the variety of interactions that can be mapped to a MIDI interface, than anything else. So it never had a definitive purpose associated. The button to the left of the **Distance Sensor** is meant to toggle the Sensor on or off.
+The **Distance Sensor** in the controller was more a Proof of Concept of the variety of interactions that can be mapped to a MIDI interface, than anything else. So it never had a definitive purpose associated. The button to the left of the **Distance Sensor** is meant to toggle the Sensor on or off.
 
 #### Controls in the Pomel4Live controller
 
@@ -31,6 +31,12 @@ The controller consists of a few faders, buttons and knobs mainly. Specifically:
 * 2 Effect level knobs - Each to be associated with the Return Level of the first two Effects.
 * A distance sensor. Not specifically used.
 * A Distance Sensor Toggle. A button that enables or disables the distance sensor.
+
+### Usage with Reason
+
+During the workshop, The attendees who were Ableton Live users where guided by the crew in order to generate the specific [Control Surface Scripts](https://help.ableton.com/hc/en-us/articles/206240184-Creating-your-own-Control-Surface-script) for the Ableton Live DAW. But there was not so much focus in the Reason software, so the Remote Scripts for **Pomel4Live** and Propellerheads Reason were never created.
+
+A few days ago, we decided to revamp the controller and give it a try to make it work seamlessly with Reason without the need to remap the remote controls each time Malena needed to work on a new project and after this, I'm creating the repository to publish them.
 
 #### Pomel4Live's Default Remote Mapping in Reason
 
@@ -61,11 +67,6 @@ The controller consists of a few faders, buttons and knobs mainly. Specifically:
 | Distance Sensor | Nothing currently. Probably best used as a modulator | |
 | Distance Sensor Toggle | Enables or disables the distance sensor | No Reason device |
 
-## Usage with Reason
-
-During the workshop, The attendees who were Ableton Live users where guided by the crew in order to generate the specific [Control Surface Scripts](https://help.ableton.com/hc/en-us/articles/206240184-Creating-your-own-Control-Surface-script) for the Ableton Live DAW. But there was not so much focus in the Reason software, so the Remote Scripts for **Pomel4Live** and Propellerheads Reason were never created.
-
-A few days ago, we decided to revamp the controller and give it a try to make it work seamlessly with Reason without the need to remap the remote controls each time Malena needed to work on a new project and after this, I'm creating the repository to publish them.
 
 ### Reason Support Files
 
