@@ -4,13 +4,12 @@ Everything related to the Pomel4Live custom MIDI Controller
 
 ### What is Pomel4Live
 
-**Pomel4Live** is a custom MIDI controller developed by my wife, Malena. While she was guided and assisted in the construction by [Yaeltex](https://github.com/Yaeltex) as part of the proposed tasks of the [MIDI controller workshop](https://yaeltex.com/tcmidi1-inscripcion/), the controls design and layout was designed by her to suit her needs as a frequent user of DAWs for producing and designing for Theater Plays.
-
+**Pomel4Live** is a custom MIDI controller developed by my wife, Malena. While she was guided and assisted in the construction by [Yaeltex](https://github.com/Yaeltex) during the [MIDI controller workshop](https://yaeltex.com/tcmidi1-inscripcion/), the controls were thought by Malena to suit her needs as a frequent user of the [Reason DAW](https://www.propellerheads.se/en/reason) for [producing and designing Sound for Theater Plays](http://www.alternativateatral.com/persona5802-malena-graciosi).
 
 
 ### Controller  overview
 
-Pomel4Live's design is very opinionated and resembles a simple 4 channel mixer. Its main purpose is to controller a specific and reduced set of the [Propellerheads Reason Main Section] controls. Specifically, channellevels, FX returns, and FX Sends.
+The design of the **Pomel4Live** MIDI controller is very opinionated and resembles a simple 4 channel mixer with two faders, two knobs and two buttons for each channel. Its main purpose is to control a specific and reduced set of Reason remotable items of the Main Section. Specifically, Channel Levels, Channel Effect Send Levels and Effect Return Levels.
 
 | <img src="https://user-images.githubusercontent.com/746152/28279616-6a8c1c92-6af7-11e7-954d-d65c3003bdbf.jpg" width=300 /> | <img src="https://user-images.githubusercontent.com/746152/28279909-5fc2b766-6af8-11e7-9ab7-bbc90250f088.jpg" width=300 /> |
 |:---:|:---:|
@@ -20,22 +19,21 @@ Pomel4Live's design is very opinionated and resembles a simple 4 channel mixer. 
 
 The controller consists of a few faders, buttons and knobs mainly. Specifically:
 
-* 4 Faders
-* 2 main knobs (meant to control something on which the other buttons will depend as FX return levels)
-* 8 child knobs (meant to control two things by channel )
-* 8 Buttons (meant to control two things by channel)
-* A distance sensor. Not specifically used by her.
-* Distance Sensor toggle. Enables or disables the distance sensor.
+* 4 Faders - Each to be associated with one of the first 4 channels.
+* 2 main knobs - Each to be associated with the Return Level of the first two Effects.
+* 8 child knobs (meant to control the Send Level of each of the 4 channels two each of the two Effects).
+* 8 Buttons (meant to mute or solo each of the 4 channels)
+* A distance sensor. Not specifically used.
+* A Distance Sensor toggle button. Enables or disables the distance sensor.
 
+#### Specific purpose of the controls
 
-#### Specific purpose
-
-The basic idea was that the two Main knobs (**Knob a** and **Knob b**) were going to handle the Return Level of just two Effect (FXs). The 4 faders would handle the levels of the first 4 channels. The two buttons before each fader would mute or solo the channel. And the knobs labeled a1, b1, a[x], b[x] would handle the Send level of the channel to Effect a and Effect b.
+The basic idea was that the two Main knobs (**Knob a** and **Knob b**) were going to handle the Return Level of the first two Effect (FXs). The 4 faders would handle the levels of the first 4 channels. The two buttons before each fader would mute or solo the channel. And the knobs labeled a1, b1, a[x], b[x] would handle the Send level of the channel to Effect a and Effect b.
 
 The *Distance Sensor* in the controller was more a Proof of Concept of the variety of interactions that can be mapped to a MIDI interface, than anything else. So it never had a definitive purpose associated. The button to the left of the **Distance Sensor** is meant to toggle the Sensor on or off.
 
 
-#### Specific purpos in Reason
+#### Specific purpose in Reason
 
 | Control | Reason function | Reason device |
 |:---:|:---:|:---:|
@@ -66,11 +64,9 @@ The *Distance Sensor* in the controller was more a Proof of Concept of the varie
 
 ## Usage with Reason
 
-During the workshop, to Ableton Live users where guided by .
-So while creating the controller, there was some guidance to those users in order to create
-The Ableton Live Automation scripts for the controller but not so much for Reason users..
+During the workshop, The attendees who were Ableton Live users where guided by the crew in order to generate the specific [Control Surface Scripts](https://help.ableton.com/hc/en-us/articles/206240184-Creating-your-own-Control-Surface-script) for the Ableton Live DAW. But there was not so much focus in the Reason software, so the Remote Scripts for **Pomel4Live** and Propellerheads Reason were never created.
 
-A few days ago, we decided to revamp the controller and give it a try to make it work seamlessly with Reason without the need to remap the remote controls each time Malena needed to work on a new project.
+A few days ago, we decided to revamp the controller and give it a try to make it work seamlessly with Reason without the need to remap the remote controls each time Malena needed to work on a new project and after this, I'm creating the repository to publish them.
 
 ### Reason Support Files
 
