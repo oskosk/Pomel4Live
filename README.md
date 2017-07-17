@@ -9,6 +9,9 @@ Everything related to the Pomel4Live custom MIDI Controller
 Pomel4Live's design is very opinionated and resembles a simple 4 channel mixer. Its main purpose was for it to work with Propellerheads Reason
 as an assistant to the most used functions from the [Reason Main Section]().
 
+![pomel4live](https://user-images.githubusercontent.com/746152/28279616-6a8c1c92-6af7-11e7-954d-d65c3003bdbf.jpg)
+
+
 ### Gear overview
 
 The controller consists of a few fader and buttons mainly. Specifically:
