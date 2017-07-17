@@ -25,8 +25,33 @@ The controller consists of a few faders, buttons and knobs mainly. Specifically:
 
 #### Proposed setup for Reason
 
-* Button a - controls FX 1 Return Level
-* Button b - controls FX 2 Return Level
+| Control | Reason function | Reason device |
+|:---:|:---:|:---:|
+| Button a | controls FX 1 Return Level | Main Section |
+| Button b | controls FX 2 Return Level | Main Section |
+| Knob a1 | controls FX 1 Send Level for Channel 1 | Main Section |
+| Knob b1 | controls FX 2 Send Level for Channel 1 | Main Section |
+| Knob a2 | controls FX 1 Send Level for Channel 2 | Main Section |
+| Knob b2 | controls FX 2 Send Level for Channel 2 | Main Section |
+| Knob a3 | controls FX 1 Send Level for Channel 3 | Main Section |
+| Knob b3 | controls FX 2 Send Level for Channel 3 | Main Section |
+| Knob a4 | controls FX 1 Send Level for Channel 4 | Main Section |
+| Knob b4 | controls FX 2 Send Level for Channel 4 | Main Section |
+| Button 1 | Mutes Channel 1 | Main Section |
+| Button 2 | Soloes Channel 1 | Main Section |
+| Button 3 | Mutes Channel 2 | Main Section |
+| Button 4 | Soloes Channel 2 | Main Section |
+| Button 5 | Mutes Channel 3 | Main Section |
+| Button 6 | Soloes Channel 3 | Main Section |
+| Button 7 | Mutes Channel 4 | Main Section |
+| Button 8 | Soloes Channel 4 | Main Section |
+| Fader 1 | controls Level for Channel 1 | Main Section |
+| Fader 2 | controls Level for Channel 2 | Main Section |
+| Fader 3 | controls Level for Channel 3 | Main Section |
+| Fader 4 | controls Level for Channel 4 | Main Section |
+| Distance Sensor | Probably best used as a modulator | Main Section |
+| Distance Sensor Toggle |  Enables or disables the distance sensor | Main Section |
+
 * Knob a1 - controls FX 1 Send Level for Channel 1
 * Knob b1 - controls FX 2 Send Level for Channel 1
 * Knob a2 - controls FX 1 Send Level for Channel 2
