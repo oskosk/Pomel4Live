@@ -15,25 +15,24 @@ The design of the **Pomel4Live** MIDI controller is very opinionated and resembl
 |:---:|:---:|
 | **Pomel4Live MIDI Controller**| **Pomel4Live MIDI Controller - Front** |
 
-### Controls in the Pomel4Live controller
-
-The controller consists of a few faders, buttons and knobs mainly. Specifically:
-
-* 4 Faders - Each to be associated with one of the first 4 channels.
-* 2 main knobs - Each to be associated with the Return Level of the first two Effects.
-* 8 child knobs (meant to control the Send Level of each of the 4 channels two each of the two Effects).
-* 8 Buttons (meant to mute or solo each of the 4 channels)
-* A distance sensor. Not specifically used.
-* A Distance Sensor toggle button. Enables or disables the distance sensor.
-
 #### Specific purpose of the controls
 
 The basic idea was that the two Main knobs (**Knob a** and **Knob b**) were going to handle the Return Level of the first two Effect (FXs). The 4 faders would handle the levels of the first 4 channels. The two buttons before each fader would mute or solo the channel. And the knobs labeled a1, b1, a[x], b[x] would handle the Send level of the channel to Effect a and Effect b.
 
 The *Distance Sensor* in the controller was more a Proof of Concept of the variety of interactions that can be mapped to a MIDI interface, than anything else. So it never had a definitive purpose associated. The button to the left of the **Distance Sensor** is meant to toggle the Sensor on or off.
 
+#### Controls in the Pomel4Live controller
 
-#### Specific purpose in Reason
+The controller consists of a few faders, buttons and knobs mainly. Specifically:
+
+* 4 Channel Level Faders - Each to be associated with one of the first 4 channels.
+* 8 Mute/Sollo Buttons - Meant to mute or solo each of the 4 channels.
+* 8 Send Level knobs - Meant to control the Send Level of each of the 4 channels to each of the two Effects.
+* 2 Effect level knobs - Each to be associated with the Return Level of the first two Effects.
+* A distance sensor. Not specifically used.
+* A Distance Sensor Toggle. A button that enables or disables the distance sensor.
+
+#### Pomel4Live's Default Remote Mapping in Reason
 
 | Control | Reason function | Reason device |
 |:---:|:---:|:---:|
