@@ -44,6 +44,18 @@ The controller consists of a few faders, buttons and knobs mainly. Specifically:
 
 **Pomel4Live** works in a default mapping if the proper setup is followed. For this, you need to follow the [installation steps](#reason-support-files-installation).
 
+
+#### Reason Support Files
+
+These files need to be copied into Reason specific folders. These are just three files
+
+* The MIDI Codec File
+  * [Pomel4Live - Reason Support Files/Codecs/MIDI Codecs/Pomel4Live.midicodec](https://raw.githubusercontent.com/oskosk/Pomel4Live/master/Pomel4Live%20-%20Reason%20Support%20Files/Codecs/MIDI%20Codecs/Pomel4Live.midicodec?token=AAtiqNGEjyNBwKrwL-hUZrxLgmkuQiEmks5Zd1UQwA%3D%3D)
+* The Map File
+  * [Pomel4Live - Reason Support Files/Maps/Malena Graciosi/Pomel4Live.remotemap](https://raw.githubusercontent.com/oskosk/Pomel4Live/master/Pomel4Live%20-%20Reason%20Support%20Files/Maps/Malena%20Graciosi/Pomel4Live.remotemap?token=AAtiqH_eIOZl232JWR3qhjSej7UgvT4kks5Zd1VOwA%3D%3D).
+* The Pomel4Live thumbnail image
+  * [Pomel4Live - Reason Support Files/Codecs/MIDI Codecs/Pomel4Live.png](https://github.com/oskosk/Pomel4Live/raw/master/Pomel4Live%20-%20Reason%20Support%20Files/Codecs/MIDI%20Codecs/Pomel4Live.png)
+
 #### Reason Support Files Installation
 
 1. Copy the MIDI codec files for **Pomel4Live**
@@ -80,11 +92,4 @@ The controller consists of a few faders, buttons and knobs mainly. Specifically:
 | Distance Sensor | Nothing currently. Probably best used as a modulator | |
 | Distance Sensor Toggle | Enables or disables the distance sensor | No Reason device |
 
-
-### Reason Support Files
-
-* Codec File
-  * Pomel4Live.midicodec
-* Map File
-  * Pomel4Live.mapmidi
   
