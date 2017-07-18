@@ -1,0 +1,35 @@
+Propellerhead Remote Mapping File
+File Format Version	1.0.0
+Control Surface Manufacturer	Malena Graciosi
+Control Surface Model	Pomel4Live
+Map Version	1.4.7
+
+//<	20110628
+Scope	Propellerheads	Reason Master Section	
+
+Define Group	Mode	Mute	Solo
+
+Map	Knob a		FX1 Return Level
+Map	Knob b		FX2 Return Level
+Map	Knob a1		Channel 1 FX1 Send Level
+Map	Knob b1		Channel 1 FX2 Send Level
+Map	Knob a2		Channel 2 FX1 Send Level
+Map	Knob b2		Channel 2 FX2 Send Level
+Map	Knob a3		Channel 3 FX1 Send Level
+Map	Knob b3		Channel 3 FX2 Send Level
+Map	Knob a4		Channel 4 FX1 Send Level
+Map	Knob b4		Channel 4 FX2 Send Level
+Map	Fader 1		Channel 1 Level
+Map	Fader 2		Channel 2 Level
+Map	Fader 3		Channel 3 Level
+Map	Fader 4		Channel 4 Level
+
+Map	Button 1		Channel 1 Mute			
+Map	Button 2		Channel 1 Solo
+Map	Button 3		Channel 2 Mute			
+Map	Button 4		Channel 2 Solo
+Map	Button 5		Channel 3 Mute			
+Map	Button 6		Channel 3 Solo
+Map	Button 7		Channel 4 Mute			
+Map	Button 8		Channel 4 Solo
+

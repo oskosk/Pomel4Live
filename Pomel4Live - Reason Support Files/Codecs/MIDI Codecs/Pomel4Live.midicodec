@@ -1,0 +1,59 @@
+Universal MIDI Codec Control Surface Definition File
+File Format Version	1.0.0
+Control Surface Manufacturer	Malena Graciosi
+Control Surface Model	Pomel4Live
+Codec Version	1.0.1
+
+
+Setup Info Text	Pomel4Live is a simple MIDI controller consisting of 10 knobs, 4 faders, 8 buttons and a distance sensor modulation wheel.
+Setup Info Text	Pomel4Live was developed during a MIDI Workshop organized by Yaeltex.
+
+Item Header	Name	Type	Min	Max
+Item	Distance Sensor Fader	value	0	127
+Item	Knob a	value	0	127
+Item	Knob b	value	0	127
+Item	Knob a1	value	0	127
+Item	Knob a2	value	0	127
+Item	Knob a3	value	0	127
+Item	Knob a4	value	0	127
+Item	Knob b1	value	0	127
+Item	Knob b2	value	0	127
+Item	Knob b3	value	0	127
+Item	Knob b4	value	0	127
+Item	Button 1	button	0	1
+Item	Button 2	button	0	1
+Item	Button 3	button	0	1
+Item	Button 4	button	0	1
+Item	Button 5	button	0	1
+Item	Button 6	button	0	1
+Item	Button 7	button	0	1
+Item	Button 8	button	0	1
+Item	Fader 1	value	0	127
+Item	Fader 2	value	0	127
+Item	Fader 3	value	0	127
+Item	Fader 4	value	0	127
+
+Map Header	Pattern	Name	Value1	Value2	Value3
+Map	b? 64 xx	Distance Sensor Fader	x	0	0
+Map	b? 00 xx	Knob a	x	0	0
+Map	b? 01 xx	Knob b	x	0	0
+Map	b? 02 xx	Knob a1	x	0	0
+Map	b? 03 xx	Knob a2	x	0	0
+Map	b? 04 xx	Knob a3	x	0	0
+Map	b? 05 xx	Knob a4	x	0	0
+Map	b? 06 xx	Knob b1	x	0	0
+Map	b? 07 xx	Knob b2	x	0	0
+Map	b? 08 xx	Knob b3	x	0	0
+Map	b? 09 xx	Knob b4	x	0	0
+Map	9? 00 xx	Button 1	1	0	0
+Map	9? 01 xx	Button 2	1	0	0
+Map	9? 02 xx	Button 3	1	0	0
+Map	9? 03 xx	Button 4	1	0	0
+Map	9? 04 xx	Button 5	1	0	0
+Map	9? 05 xx	Button 6	1	0	0
+Map	9? 06 xx	Button 7	1	0	0
+Map	9? 07 xx	Button 8	1	0	0
+Map	b? 0a xx	Fader 1	x	0	0
+Map	b? 0b xx	Fader 2	x	0	0
+Map	b? 0c xx	Fader 3	x	0	0
+Map	b? 0d xx	Fader 4	x	0	0
