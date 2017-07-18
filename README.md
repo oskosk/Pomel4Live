@@ -17,7 +17,7 @@ A few days ago, we decided to revamp the controller and give it a try to make it
 
 ### Controller  overview
 
-The design of the **Pomel4Live** MIDI controller is very opinionated and resembles a simple 4 channel mixer with two faders, two knobs and two buttons for each channel. Its main purpose is to control a specific and reduced set of Reason remotable items of the Main Section. Specifically, Channel Levels, Channel Effect Send Levels and Effect Return Levels.
+The design of the **Pomel4Live** MIDI controller is very opinionated and resembles a simple 4 channel mixer with two faders, two knobs and two buttons for each channel. Its main purpose is to control a specific and reduced set of Reason remotable items of the Master Section. Specifically, Channel Levels, Channel Effect Send Levels and Effect Return Levels.
 
 | <img src="https://user-images.githubusercontent.com/746152/28279616-6a8c1c92-6af7-11e7-954d-d65c3003bdbf.jpg" width=300 /> | <img src="https://user-images.githubusercontent.com/746152/28279909-5fc2b766-6af8-11e7-9ab7-bbc90250f088.jpg" width=300 /> |
 |:---:|:---:|
@@ -61,34 +61,34 @@ These files need to be copied into Reason specific folders. These are just three
 1. Copy the MIDI codec files for **Pomel4Live**
 1. Install the MIDI map files for **Pomel4Live**
 1. Autodetect the Control Surface from Reason's Preferences.
-1. Lock the surface to the **Reason Main Section**.
+1. Lock the surface to the **Reason Master Section**.
 
 #### Pomel4Live's Default Remote Mapping in Reason
 
 | Control | Reason function | Reason device |
 |:---:|:---:|:---:|
-| Button a | controls FX 1 Return Level | Main Section |
-| Button b | controls FX 2 Return Level | Main Section |
-| Knob a1 | controls FX 1 Send Level for Channel 1 | Main Section |
-| Knob b1 | controls FX 2 Send Level for Channel 1 | Main Section |
-| Knob a2 | controls FX 1 Send Level for Channel 2 | Main Section |
-| Knob b2 | controls FX 2 Send Level for Channel 2 | Main Section |
-| Knob a3 | controls FX 1 Send Level for Channel 3 | Main Section |
-| Knob b3 | controls FX 2 Send Level for Channel 3 | Main Section |
-| Knob a4 | controls FX 1 Send Level for Channel 4 | Main Section |
-| Knob b4 | controls FX 2 Send Level for Channel 4 | Main Section |
-| Button 1 | Mutes Channel 1 | Main Section |
-| Button 2 | Soloes Channel 1 | Main Section |
-| Button 3 | Mutes Channel 2 | Main Section |
-| Button 4 | Soloes Channel 2 | Main Section |
-| Button 5 | Mutes Channel 3 | Main Section |
-| Button 6 | Soloes Channel 3 | Main Section |
-| Button 7 | Mutes Channel 4 | Main Section |
-| Button 8 | Soloes Channel 4 | Main Section |
-| Fader 1 | controls Level for Channel 1 | Main Section |
-| Fader 2 | controls Level for Channel 2 | Main Section |
-| Fader 3 | controls Level for Channel 3 | Main Section |
-| Fader 4 | controls Level for Channel 4 | Main Section |
+| Button a | FX1 Return Level | Reason Master Section |
+| Button b | FX2 Return Level | Reason Master Section |
+| Knob a1 | Channel 1 FX1 Send Level | Reason Master Section |
+| Knob b1 | Channel 1 FX2 Send Level | Reason Master Section |
+| Knob a2 | Channel 2 FX1 Send Level | Reason Master Section |
+| Knob b2 | Channel 2 FX2 Send Level | Reason Master Section |
+| Knob a3 | Channel 3 FX1 Send Level | Reason Master Section |
+| Knob b3 | Channel 3 FX2 Send Level | Reason Master Section |
+| Knob a4 | Channel 4 FX1 Send Level | Reason Master Section |
+| Knob b4 | Channel 4 FX2 Send Level | Reason Master Section |
+| Button 1 | Channel 1 Mute | Reason Master Section |
+| Button 2 | Channel 1 Solo | Reason Master Section |
+| Button 3 | Channel 2 Mute | Reason Master Section |
+| Button 4 | Channel 2 Solo | Reason Master Section |
+| Button 5 | Channel 3 Mute | Reason Master Section |
+| Button 6 | Channel 3 Solo | Reason Master Section |
+| Button 7 | Channel 4 Mute | Reason Master Section |
+| Button 8 | Channel 4 Solo | Reason Master Section |
+| Fader 1 | Channel 1 Level | Reason Master Section |
+| Fader 2 | Channel 2 Level | Reason Master Section |
+| Fader 3 | Channel 3 Level | Reason Master Section |
+| Fader 4 | Channel 4 Level | Reason Master Section |
 | Distance Sensor | Nothing currently. Probably best used as a modulator | |
 | Distance Sensor Toggle | Enables or disables the distance sensor | No Reason device |
 
