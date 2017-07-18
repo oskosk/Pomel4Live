@@ -2,9 +2,9 @@ Propellerhead Remote Mapping File
 File Format Version	1.0.0
 Control Surface Manufacturer	Malena Graciosi
 Control Surface Model	Pomel4Live
-Map Version	1.4.7
+Map Version	1.1.0
 
-//<	20110628
+//<	20170716
 Scope	Propellerheads	Reason Master Section	
 
 Define Group	Mode	Mute	Solo
