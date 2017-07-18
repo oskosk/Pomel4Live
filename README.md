@@ -2,6 +2,11 @@
 
 Everything related to the **Pomel4Live** custom MIDI Controller
 
+* [Usage with Reason](#usage-with-reason)
+  * [Installation](#reason-support-files-installation)
+  * [Pomel4Live's Default Remote Mapping in Reason](#pomel4lives-default-remote-mapping-in-reason)
+  * [Reason Support Files](#reason-support-files)
+
 ### What is Pomel4Live
 
 **Pomel4Live** is a custom MIDI controller developed by my wife, Malena. While she was guided and assisted in the construction by [Yaeltex](https://github.com/Yaeltex) during the [MIDI controller workshop](https://yaeltex.com/tcmidi1-inscripcion/), the controls were thought by Malena to suit her needs as a frequent user of the [Reason DAW](https://www.propellerheads.se/en/reason) for [producing and designing Sound for Theater Plays](http://www.alternativateatral.com/persona5802-malena-graciosi).
@@ -37,7 +42,9 @@ The controller consists of a few faders, buttons and knobs mainly. Specifically:
 
 ### Usage with Reason
 
-**Pomel4Live** works in a default mapping if the proper setup is followed. For this, you need to:
+**Pomel4Live** works in a default mapping if the proper setup is followed. For this, you need to follow the [installation steps](#reason-support-files-installation).
+
+#### Reason Support Files Installation
 
 1. Copy the MIDI codec files for **Pomel4Live**
 1. Install the MIDI map files for **Pomel4Live**
