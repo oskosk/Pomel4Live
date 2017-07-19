@@ -102,27 +102,27 @@ These files need to be copied into Reason specific folders. These are just three
   
   | Control | MIDI Values Hex | Reason device |
 |:---:|:---:|:---:|
-| Distance Sensor | 64 | |
-| Knob a | B?00 |  |
-| Knob b | B?01 | Reason Master Section |
-| Knob a1 | B?02 | Reason Master Section |
-| Knob b1 | B?03 | Reason Master Section |
-| Knob a2 | B?04 | Reason Master Section |
-| Knob b2 | B?05 | Reason Master Section |
-| Knob a3 | B?06 | Reason Master Section |
-| Knob b3 | B?07 | Reason Master Section |
-| Knob a4 | B?08 | Reason Master Section |
-| Knob b4 | B?09 | Reason Master Section |
-| Button 1 | 9?00 | Reason Master Section |
-| Button 2 | 9?01 | Reason Master Section |
-| Button 3 | 9?02 | Reason Master Section |
-| Button 4 | 9?03 | Reason Master Section |
-| Button 5 | 9?04 | Reason Master Section |
-| Button 6 | 9?05 | Reason Master Section |
-| Button 7 | 9?06 | Reason Master Section |
-| Button 8 | 9?07 | Reason Master Section |
-| Fader 1 | b?0a | Reason Master Section |
-| Fader 2 | b?0b | Reason Master Section |
-| Fader 3 | b?0c | Reason Master Section |
-| Fader 4 | b?0d | Reason Master Section |
-| Distance Sensor Toggle | |
+| Distance Sensor | B0 64 | |
+| Knob a | B0 00 |  |
+| Knob b | B0 01 |  |
+| Knob a1 | B0 02 | |
+| Knob b1 | B0 03 |  |
+| Knob a2 | B0 04 |  |
+| Knob b2 | B0 05 |  |
+| Knob a3 | B0 06 |  |
+| Knob b3 | B0 07 |  |
+| Knob a4 | B0 08 |  |
+| Knob b4 | B0 09 |  |
+| Button 1 | 90 00 |  |
+| Button 2 | 90 01 |  |
+| Button 3 | 90 02 |  |
+| Button 4 | 90 03 |  |
+| Button 5 | 90 04 |  |
+| Button 6 | 90 05 |  |
+| Button 7 | 90 06 |  |
+| Button 8 | 90  07 |  |
+| Fader 1 | b0 0A |  |
+| Fader 2 | b0 0B |  |
+| Fader 3 | b0 0C |  |
+| Fader 4 | b0 0D |  |
+| Distance Sensor Toggle | Does not send a value | }
