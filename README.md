@@ -6,6 +6,7 @@ Everything related to the **Pomel4Live** custom MIDI Controller
   * [Installation](#reason-support-files-installation)
   * [Pomel4Live's Default Remote Mapping in Reason](#pomel4lives-default-remote-mapping-in-reason)
   * [Reason Support Files](#reason-support-files)
+* [Pomel4Live controls MIDI values](#pomel4live-controls-midi-values)
 
 ### What is Pomel4Live
 
@@ -71,8 +72,8 @@ These files need to be copied into Reason specific folders. These are just three
 
 | Control | Reason function | Reason device |
 |:---:|:---:|:---:|
-| Button a | FX1 Return Level | Reason Master Section |
-| Button b | FX2 Return Level | Reason Master Section |
+| Knob a | FX1 Return Level | Reason Master Section |
+| Knob b | FX2 Return Level | Reason Master Section |
 | Knob a1 | Channel 1 FX1 Send Level | Reason Master Section |
 | Knob b1 | Channel 1 FX2 Send Level | Reason Master Section |
 | Knob a2 | Channel 2 FX1 Send Level | Reason Master Section |
@@ -96,4 +97,32 @@ These files need to be copied into Reason specific folders. These are just three
 | Distance Sensor | Nothing currently. Probably best used as a modulator | |
 | Distance Sensor Toggle | Enables or disables the distance sensor | No Reason device |
 
+
+### Pomel4Live controls MIDI values
   
+  | Control | MIDI Values Hex | Reason device |
+|:---:|:---:|:---:|
+| Distance Sensor | 64 | |
+| Knob a | B?00 |  |
+| Knob b | B?01 | Reason Master Section |
+| Knob a1 | B?02 | Reason Master Section |
+| Knob b1 | B?03 | Reason Master Section |
+| Knob a2 | B?04 | Reason Master Section |
+| Knob b2 | B?05 | Reason Master Section |
+| Knob a3 | B?06 | Reason Master Section |
+| Knob b3 | B?07 | Reason Master Section |
+| Knob a4 | B?08 | Reason Master Section |
+| Knob b4 | B?09 | Reason Master Section |
+| Button 1 | 9?00 | Reason Master Section |
+| Button 2 | 9?01 | Reason Master Section |
+| Button 3 | 9?02 | Reason Master Section |
+| Button 4 | 9?03 | Reason Master Section |
+| Button 5 | 9?04 | Reason Master Section |
+| Button 6 | 9?05 | Reason Master Section |
+| Button 7 | 9?06 | Reason Master Section |
+| Button 8 | 9?07 | Reason Master Section |
+| Fader 1 | b?0a | Reason Master Section |
+| Fader 2 | b?0b | Reason Master Section |
+| Fader 3 | b?0c | Reason Master Section |
+| Fader 4 | b?0d | Reason Master Section |
+| Distance Sensor Toggle | |
