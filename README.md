@@ -100,29 +100,29 @@ These files need to be copied into Reason specific folders. These are just three
 
 ### Pomel4Live controls MIDI values
   
-  | Control | MIDI Values Hex | Reason device |
+  | Control | MIDI Values Hex | Note/Control
 |:---:|:---:|:---:|
-| Distance Sensor | B0 64 | |
-| Knob a | B0 00 |  |
-| Knob b | B0 01 |  |
-| Knob a1 | B0 02 | |
-| Knob b1 | B0 03 |  |
-| Knob a2 | B0 04 |  |
-| Knob b2 | B0 05 |  |
-| Knob a3 | B0 06 |  |
-| Knob b3 | B0 07 |  |
-| Knob a4 | B0 08 |  |
-| Knob b4 | B0 09 |  |
-| Button 1 | 90 00 |  |
-| Button 2 | 90 01 |  |
-| Button 3 | 90 02 |  |
-| Button 4 | 90 03 |  |
-| Button 5 | 90 04 |  |
-| Button 6 | 90 05 |  |
-| Button 7 | 90 06 |  |
-| Button 8 | 90  07 |  |
-| Fader 1 | b0 0A |  |
-| Fader 2 | b0 0B |  |
-| Fader 3 | b0 0C |  |
-| Fader 4 | b0 0D |  |
-| Distance Sensor Toggle | Does not send a value | }
+| Distance Sensor | B0 64 | CC 100 |
+| Knob a | B0 00 | CC 0  |
+| Knob b | B0 01 |  CC 1 |
+| Knob a1 | B0 02 | CC 2 |
+| Knob b1 | B0 03 | CC 3 |
+| Knob a2 | B0 04 | CC 4 |
+| Knob b2 | B0 05 | CC 5 |
+| Knob a3 | B0 06 | CC 6 |
+| Knob b3 | B0 07 | CC 7 |
+| Knob a4 | B0 08 | CC 8 |
+| Knob b4 | B0 09 | CC 9 |
+| Button 1 | 90 00 | C-2 |
+| Button 2 | 90 01 | C#-2 |
+| Button 3 | 90 02 | D-2 |
+| Button 4 | 90 03 | D#-2 |
+| Button 5 | 90 04 | E-2 |
+| Button 6 | 90 05 | F-2 |
+| Button 7 | 90 06 | F#-2 |
+| Button 8 | 90  07 | G-2 |
+| Fader 1 | b0 0A | CC 10 |
+| Fader 2 | b0 0B | CC 11 |
+| Fader 3 | b0 0C | CC 12 |
+| Fader 4 | b0 0D | CC 13 |
+| Distance Sensor Toggle | Does not send a value | |
