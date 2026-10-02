@@ -41,6 +41,19 @@ The controller consists of a few faders, buttons and knobs mainly. Specifically:
 * A distance sensor. Not specifically used.
 * A Distance Sensor Toggle. A button that enables or disables the distance sensor.
 
+#### Controls by channel
+
+Each of the four channel strips groups these controls:
+
+| Channel | FX1 send | FX2 send | Mute | Solo | Level |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| 1 | Knob a1 | Knob b1 | Button 1 | Button 2 | Fader 1 |
+| 2 | Knob a2 | Knob b2 | Button 3 | Button 4 | Fader 2 |
+| 3 | Knob a3 | Knob b3 | Button 5 | Button 6 | Fader 3 |
+| 4 | Knob a4 | Knob b4 | Button 7 | Button 8 | Fader 4 |
+
+**Knob a** and **Knob b** sit outside the channel strips and control the FX1 and FX2 return levels.
+
 ### Usage with Reason
 
 **Pomel4Live** works with a default mapping once its Reason support files are installed. Follow the [installation steps](#reason-support-files-installation).
