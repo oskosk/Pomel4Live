@@ -52,13 +52,13 @@ These files need to be copied into Reason specific folders. These are just three
 
 * The MIDI Codec File
   * `Codecs/MIDI Codecs/` directory
-    * [Pomel4Live.midicodec](https://raw.githubusercontent.com/oskosk/Pomel4Live/master/Pomel4Live%20-%20Reason%20Support%20Files/Codecs/MIDI%20Codecs/Pomel4Live.midicodec?token=AAtiqNGEjyNBwKrwL-hUZrxLgmkuQiEmks5Zd1UQwA%3D%3D)
+    * [Pomel4Live.midicodec](Pomel4Live%20-%20Reason%20Support%20Files/Codecs/MIDI%20Codecs/Pomel4Live.midicodec)
     * The Pomel4Live thumbnail image
-      * [Pomel4Live.png](https://github.com/oskosk/Pomel4Live/raw/master/Pomel4Live%20-%20Reason%20Support%20Files/Codecs/MIDI%20Codecs/Pomel4Live.png)
+      * [Pomel4Live.png](Pomel4Live%20-%20Reason%20Support%20Files/Codecs/MIDI%20Codecs/Pomel4Live.png)
 
 * The Map File
   * `Maps/Malena Graciosi/` directory
-    * [Pomel4Live.remotemap](https://raw.githubusercontent.com/oskosk/Pomel4Live/master/Pomel4Live%20-%20Reason%20Support%20Files/Maps/Malena%20Graciosi/Pomel4Live.remotemap?token=AAtiqH_eIOZl232JWR3qhjSej7UgvT4kks5Zd1VOwA%3D%3D).
+    * [Pomel4Live.remotemap](Pomel4Live%20-%20Reason%20Support%20Files/Maps/Malena%20Graciosi/Pomel4Live.remotemap)
 
 
 #### Reason Support Files Installation
