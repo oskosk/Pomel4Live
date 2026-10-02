@@ -43,30 +43,28 @@ The controller consists of a few faders, buttons and knobs mainly. Specifically:
 
 ### Usage with Reason
 
-**Pomel4Live** works in a default mapping if the proper setup is followed. For this, you need to follow the [installation steps](#reason-support-files-installation).
-
+**Pomel4Live** works with a default mapping once its Reason support files are installed. Follow the [installation steps](#reason-support-files-installation).
 
 #### Reason Support Files
 
-These files need to be copied into Reason specific folders. These are just three files
+The [`Pomel4Live - Reason Support Files`](Pomel4Live%20-%20Reason%20Support%20Files) folder contains three files, laid out the same way as Reason's Remote folder:
 
-* The MIDI Codec File
-  * `Codecs/MIDI Codecs/` directory
-    * [Pomel4Live.midicodec](Pomel4Live%20-%20Reason%20Support%20Files/Codecs/MIDI%20Codecs/Pomel4Live.midicodec)
-    * The Pomel4Live thumbnail image
-      * [Pomel4Live.png](Pomel4Live%20-%20Reason%20Support%20Files/Codecs/MIDI%20Codecs/Pomel4Live.png)
-
-* The Map File
-  * `Maps/Malena Graciosi/` directory
-    * [Pomel4Live.remotemap](Pomel4Live%20-%20Reason%20Support%20Files/Maps/Malena%20Graciosi/Pomel4Live.remotemap)
-
+| File | Goes in | Purpose |
+|---|---|---|
+| [Pomel4Live.midicodec](Pomel4Live%20-%20Reason%20Support%20Files/Codecs/MIDI%20Codecs/Pomel4Live.midicodec) | `Codecs/MIDI Codecs/` | Describes the controls and the MIDI messages they send |
+| [Pomel4Live.png](Pomel4Live%20-%20Reason%20Support%20Files/Codecs/MIDI%20Codecs/Pomel4Live.png) | `Codecs/MIDI Codecs/` | Thumbnail shown in Reason's Control Surfaces preferences |
+| [Pomel4Live.remotemap](Pomel4Live%20-%20Reason%20Support%20Files/Maps/Malena%20Graciosi/Pomel4Live.remotemap) | `Maps/Malena Graciosi/` | Maps the controls to the Reason Master Section |
 
 #### Reason Support Files Installation
 
-1. Copy the MIDI codec files for **Pomel4Live**
-1. Install the MIDI map files for **Pomel4Live**
-1. Autodetect the Control Surface from Reason's Preferences.
-1. Lock the surface to the **Reason Master Section**.
+1. Quit Reason.
+1. Find Reason's Remote folder. Depending on your Reason version, it is one of:
+   * macOS: `~/Library/Application Support/Propellerhead Software/Remote/` or `~/Library/Application Support/Reason Studios/Remote/`
+   * Windows: `%APPDATA%\Propellerhead Software\Remote\` or `%APPDATA%\Reason Studios\Remote\`
+1. Copy the `Codecs` and `Maps` folders from `Pomel4Live - Reason Support Files` into the Remote folder, merging them with any existing `Codecs` and `Maps` folders. Create the folders if they don't exist.
+1. Connect **Pomel4Live** and start Reason.
+1. Open Preferences (**Reason > Preferences** on macOS, **Edit > Preferences** on Windows), go to **Control Surfaces** and click **Auto-detect Surfaces**. If it isn't detected, click **Add manually** and choose manufacturer **Malena Graciosi**, model **Pomel4Live**, then select its MIDI input.
+1. Lock the surface to the Master Section: open **Options > Surface Locking...**, select **Pomel4Live** and lock it to the **Master Section** device. Otherwise the surface follows whichever device is selected in the rack.
 
 #### Pomel4Live's Default Remote Mapping in Reason
 
