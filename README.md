@@ -10,15 +10,15 @@ Everything related to the **Pomel4Live** custom MIDI Controller
 
 ### What is Pomel4Live
 
-**Pomel4Live** is a custom MIDI controller developed by my wife, Malena. While she was guided and assisted in the construction by [Yaeltex](https://github.com/Yaeltex) during the [MIDI controller workshop](https://yaeltex.com/tcmidi1-inscripcion/), the controls were thought by Malena to suit her needs as a frequent user of the [Reason DAW](https://www.propellerheads.se/en/reason) for [producing and designing Sound for Theater Plays](http://www.alternativateatral.com/persona5802-malena-graciosi).
+**Pomel4Live** is a custom MIDI controller developed by my wife, Malena. While she was guided and assisted in the construction by [Yaeltex](https://github.com/Yaeltex) during the [MIDI controller workshop](https://yaeltex.com/tcmidi1-inscripcion/), the controls were designed by Malena to suit her needs as a frequent user of the [Reason DAW](https://www.reasonstudios.com/reason) for [producing and designing sound for theater plays](http://www.alternativateatral.com/persona5802-malena-graciosi).
 
-During the workshop, The attendees who were Ableton Live users where guided by the crew in order to generate the specific [Control Surface Scripts](https://help.ableton.com/hc/en-us/articles/206240184-Creating-your-own-Control-Surface-script) for the Ableton Live DAW. But there was not so much focus in the Reason software, so the Remote Scripts for **Pomel4Live** and Propellerheads Reason were never created.
+During the workshop, the attendees who were Ableton Live users were guided by the crew to create the specific [Control Surface Scripts](https://help.ableton.com/hc/en-us/articles/206240184-Creating-your-own-Control-Surface-script) for the Ableton Live DAW. There was less focus on Reason, so Remote files for **Pomel4Live** and Reason were never created.
 
-A few days ago, we decided to revamp the controller and give it a try to make it work seamlessly with Reason without the need to remap the remote controls each time Malena needed to work on a new project and after this, I'm creating the repository to publish them.
+In July 2017 we revamped the controller to make it work with Reason out of the box, so Malena no longer had to remap the controls for every new project. This repository publishes the resulting Remote files.
 
-### Controller  overview
+### Controller overview
 
-The design of the **Pomel4Live** MIDI controller is very opinionated and resembles a simple 4 channel mixer with two faders, two knobs and two buttons for each channel. Its main purpose is to control a specific and reduced set of Reason remotable items of the Master Section. Specifically, Channel Levels, Channel Effect Send Levels and Effect Return Levels.
+The design of the **Pomel4Live** MIDI controller is very opinionated and resembles a simple 4-channel mixer with a fader, two knobs and two buttons for each channel. Its main purpose is to control a small set of remotable items of Reason's Master Section: channel levels, channel effect send levels and effect return levels.
 
 | <img src="https://user-images.githubusercontent.com/746152/28279616-6a8c1c92-6af7-11e7-954d-d65c3003bdbf.jpg" width=300 /> | <img src="https://user-images.githubusercontent.com/746152/28279909-5fc2b766-6af8-11e7-9ab7-bbc90250f088.jpg" width=300 /> |
 |:---:|:---:|
@@ -26,19 +26,19 @@ The design of the **Pomel4Live** MIDI controller is very opinionated and resembl
 
 #### Specific purpose of the controls
 
-The basic idea was that the two Main knobs (**Knob a** and **Knob b**) were going to handle the Return Level of the first two Effect (FXs). The 4 faders would handle the levels of the first 4 channels. The two buttons before each fader would mute or solo the channel. And the knobs labeled a1, b1, a[x], b[x] would handle the Send level of the channel to Effect a and Effect b.
+The basic idea was that the two Main knobs (**Knob a** and **Knob b**) handle the return levels of the first two effects (FX1 and FX2). The 4 faders handle the levels of the first 4 channels. The two buttons before each fader mute or solo the channel. The knobs labeled a1–a4 and b1–b4 handle each channel's send level to FX1 and FX2.
 
-The **Distance Sensor** in the controller was more a Proof of Concept of the variety of interactions that can be mapped to a MIDI interface, than anything else. So it never had a definitive purpose associated. The button to the left of the **Distance Sensor** is meant to toggle the Sensor on or off.
+The **Distance Sensor** in the controller is mostly a proof of concept of the variety of interactions that can be mapped to a MIDI interface, so it never had a definite purpose. Reason lists it as **Distance Sensor Fader**. The button to the left of the **Distance Sensor** is meant to toggle the Sensor on or off.
 
 #### Controls in the Pomel4Live controller
 
-The controller consists of a few faders, buttons and knobs mainly. Specifically:
+The controller consists of:
 
 * 4 Channel Level Faders - Each to be associated with one of the first 4 channels.
-* 8 Mute/Sollo Buttons - Meant to mute or solo each of the 4 channels.
+* 8 Mute/Solo Buttons - Meant to mute or solo each of the 4 channels.
 * 8 Send Level knobs - Meant to control the Send Level of each of the 4 channels to each of the two Effects.
 * 2 Effect level knobs - Each to be associated with the Return Level of the first two Effects.
-* A distance sensor. Not specifically used.
+* A Distance Sensor. Not currently mapped.
 * A Distance Sensor Toggle. A button that enables or disables the distance sensor.
 
 #### Controls by channel
@@ -110,12 +110,14 @@ The [`Pomel4Live - Reason Support Files`](Pomel4Live%20-%20Reason%20Support%20Fi
 
 
 ### Pomel4Live controls MIDI values
-  
-  | Control | MIDI Values Hex | Note/Control
+
+All messages are sent on MIDI channel 1 (status bytes `B0` and `90`). The codec accepts them on any channel.
+
+| Control | MIDI Values Hex | Note/Control |
 |:---:|:---:|:---:|
 | Distance Sensor | B0 64 | CC 100 |
-| Knob a | B0 00 | CC 0  |
-| Knob b | B0 01 |  CC 1 |
+| Knob a | B0 00 | CC 0 |
+| Knob b | B0 01 | CC 1 |
 | Knob a1 | B0 02 | CC 2 |
 | Knob b1 | B0 03 | CC 3 |
 | Knob a2 | B0 04 | CC 4 |
@@ -131,9 +133,9 @@ The [`Pomel4Live - Reason Support Files`](Pomel4Live%20-%20Reason%20Support%20Fi
 | Button 5 | 90 04 | E-2 |
 | Button 6 | 90 05 | F-2 |
 | Button 7 | 90 06 | F#-2 |
-| Button 8 | 90  07 | G-2 |
-| Fader 1 | b0 0A | CC 10 |
-| Fader 2 | b0 0B | CC 11 |
-| Fader 3 | b0 0C | CC 12 |
-| Fader 4 | b0 0D | CC 13 |
+| Button 8 | 90 07 | G-2 |
+| Fader 1 | B0 0A | CC 10 |
+| Fader 2 | B0 0B | CC 11 |
+| Fader 3 | B0 0C | CC 12 |
+| Fader 4 | B0 0D | CC 13 |
 | Distance Sensor Toggle | Does not send a value | |
