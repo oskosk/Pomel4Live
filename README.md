@@ -2,11 +2,16 @@
 
 Everything related to the **Pomel4Live** custom MIDI Controller
 
+* [What is Pomel4Live](#what-is-pomel4live)
+* [Controller overview](#controller-overview)
+  * [Controls by channel](#controls-by-channel)
 * [Usage with Reason](#usage-with-reason)
+  * [Reason Support Files](#reason-support-files)
   * [Installation](#reason-support-files-installation)
   * [Pomel4Live's Default Remote Mapping in Reason](#pomel4lives-default-remote-mapping-in-reason)
-  * [Reason Support Files](#reason-support-files)
+  * [Customizing the mapping](#customizing-the-mapping)
 * [Pomel4Live controls MIDI values](#pomel4live-controls-midi-values)
+* [License](#license)
 
 ### What is Pomel4Live
 
@@ -108,6 +113,24 @@ The [`Pomel4Live - Reason Support Files`](Pomel4Live%20-%20Reason%20Support%20Fi
 | Distance Sensor | Nothing currently. Probably best used as a modulator | |
 | Distance Sensor Toggle | Enables or disables the distance sensor | No Reason device |
 
+Current support file versions: codec 1.0.1, map 1.1.0. They were made in 2017; newer Reason versions are not tested.
+
+#### Customizing the mapping
+
+The mapping lives in [Pomel4Live.remotemap](Pomel4Live%20-%20Reason%20Support%20Files/Maps/Malena%20Graciosi/Pomel4Live.remotemap). Each line is tab-separated:
+
+```
+Map	<Control name>		<Reason remotable item>
+```
+
+Control names must match the `Item` names in [Pomel4Live.midicodec](Pomel4Live%20-%20Reason%20Support%20Files/Codecs/MIDI%20Codecs/Pomel4Live.midicodec). For example, to send the distance sensor to FX3's return level, add:
+
+```
+Map	Distance Sensor Fader		FX3 Return Level
+```
+
+To map controls to other devices, add a new `Scope` section for that device. Restart Reason after editing the file. For the file format and the remotable item names of each device, see the Remote SDK and the *Remote Info* documents that ship with Reason.
+
 
 ### Pomel4Live controls MIDI values
 
@@ -139,3 +162,7 @@ All messages are sent on MIDI channel 1 (status bytes `B0` and `90`). The codec 
 | Fader 3 | B0 0C | CC 12 |
 | Fader 4 | B0 0D | CC 13 |
 | Distance Sensor Toggle | Does not send a value | |
+
+### License
+
+[MIT](LICENSE)
