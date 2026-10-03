@@ -15,7 +15,7 @@ Everything related to the **Pomel4Live** custom MIDI Controller
 
 ### What is Pomel4Live
 
-**Pomel4Live** is a custom MIDI controller developed by Malena Graciosi. While she was guided and assisted in the construction by [Yaeltex](https://github.com/Yaeltex) during the [MIDI controller workshop](https://yaeltex.com/tcmidi1-inscripcion/), the controls were designed by Malena to suit her needs as a frequent user of the [Reason DAW](https://www.reasonstudios.com/reason) for [producing and designing sound for theater plays](http://www.alternativateatral.com/persona5802-malena-graciosi).
+**Pomel4Live** is a custom MIDI controller developed by [Malena Graciosi](https://sonidoescenico.com/mg/). While she was guided and assisted in the construction by [Yaeltex](https://github.com/Yaeltex) during the [MIDI controller workshop](https://yaeltex.com/tcmidi1-inscripcion/), the controls were designed by Malena to suit her needs as a frequent user of the [Reason DAW](https://www.reasonstudios.com/reason) for [producing and designing sound for theater plays](http://www.alternativateatral.com/persona5802-malena-graciosi).
 
 During the workshop, the attendees who were Ableton Live users were guided by the crew to create the specific [Control Surface Scripts](https://help.ableton.com/hc/en-us/articles/206240184-Creating-your-own-Control-Surface-script) for the Ableton Live DAW. There was less focus on Reason, so Remote files for **Pomel4Live** and Reason were never created.
 
